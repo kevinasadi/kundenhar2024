@@ -1,0 +1,29 @@
+
+/* main color is #c0392b */
+
+:root {
+    --maincolor: #c0392b
+}
+
+#mainnav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+
+    padding: 0.8rem; 
+    background-color: var(--maincolor);
+    border: 2px solid black;
+
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width : 100%;
+}
+
