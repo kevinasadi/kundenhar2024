@@ -27,8 +27,8 @@ body {
     background-color: darkred;
 }
 
-button {
-    background-color: #c0392b;
+nav button {
+    background-color: var(--maincolor);
     color: white;
     padding: 1rem; 
     font-size: 1.5rem;
@@ -42,11 +42,11 @@ button {
 }
 
 
-button:hover {
+nav button:hover {
     background-color: #e74c3c;
 }
 
-button:focus {
+nav button:focus {
     outline: none;
 }
 
@@ -72,7 +72,6 @@ h1 {
 
 .picture-flex {
     display: flex;
-    overflow-x: auto;
     gap: 1rem;
     padding: 1rem;
     background-color: var(--maincolor);
@@ -81,18 +80,22 @@ h1 {
 }
 
 .picture-item {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto; /* 5 rows for img, description, image-description, buy-button, timer */
+    gap: 0.5rem; /* Space between items if needed */
     background-color: #e74c3c;
     border: 2px solid black;
     border-radius: 10px;
-    overflow: hidden;
     text-align: center;
     padding: 10px;
 }
 
+
 .picture-item img {
-    width: 100%;
+    width: 200px;
     height: 200px;
-    max-height: 200px;  /* Optional: limits the max height */
+    max-height: 200px; 
+    object-fit: cover;
 }
 
 .picture-item p {
@@ -110,8 +113,55 @@ h1 {
     font-weight: 400;
     font-size: 2.5rem;
     color: white;
-    background-color: #c0392b;
+    background-color: var(--maincolor);
     border: 2px solid black;
     border-bottom: 0;
     margin-bottom: 0;
+}
+
+.image-description {
+    text-align: center;
+    overflow: hidden;
+    color: black;
+    font-family: "Lora", serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.description {
+    text-align: center;
+    color: white;
+    font-family: "Lora", serif;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+
+.text-container {
+    padding-bottom: 2rem;
+}
+
+.timer {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 0.5;
+    color: yellow; 
+}
+
+.buy-button {
+    display: inline-block;
+    background-color: #e74c3c;
+    color: white;
+    border: 2px dotted black;
+    border-radius: 5px;
+    padding: 0.5rem 0.5rem;
+    font-family: "Lora", serif;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 5 5;
+    transition: background-color 0.3s;
+}
+.buy-button:hover {
+    background-color: var(--maincolor); 
 }
