@@ -73,28 +73,28 @@ h1 {
 .picture-flex {
     display: flex;
     gap: 1rem;
-    padding: 1rem;
+    padding: 3rem;
     background-color: var(--maincolor);
     border: 2px solid black ;
     border-top: 0;
+    width: 100%;
 }
 
 .picture-item {
     display: grid;
-    grid-template-rows: auto auto auto auto auto; /* 5 rows for img, description, image-description, buy-button, timer */
+    grid-template-rows: repeat(5,1fr); /* 5 rows for img, description, image-description, buy-button, timer */
     gap: 0.5rem; /* Space between items if needed */
     background-color: #e74c3c;
     border: 2px solid black;
     border-radius: 10px;
     text-align: center;
     padding: 10px;
+    height: 23.5rem
 }
 
 
 .picture-item img {
-    width: 200px;
-    height: 200px;
-    max-height: 200px; 
+    height: 250px;
     object-fit: cover;
 }
 
