@@ -206,6 +206,8 @@ article {
     background-color: var(--maincolor);
     padding: 20px;
     border: 2px solid black;
+    max-width: 500px;
+    max-height: 500px;
 }
 
 .laggupbutton {
