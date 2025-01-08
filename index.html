@@ -3,154 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Nosifer&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
     <title>Artistic Allure</title>
-
 </head>
-
 <body>
     <div id="mainnav">
         <nav>
-            <button onclick="href='#section1'"><em>Lägg upp</em></button>
+            <button onclick="location.href='lagguppbild.html'"><em>Lägg upp</em></button>
             <button onclick="href='#section2'"><em>Mina bud</em></button>
-            <button onclick="href='#section3'"><em>Logga in</em></button>
+            <button onclick="location.href='index.html'"><em>Hitta bilder</em></button>
         </nav>
     </div>
-
     <div id="headermain">
-        <h1><em>Artistic Allure</em></h1>
+        <h1 class="byeborderbottom"><em>Artistic Allure</em></h1>
     </div>
-
-
-    <h2 class="picture-category"><em>Classic</em></h2>
-    <div class="picture-flex">
-
-        <div class="picture-item">
-            <img src="img/thestarrynight.webp" alt="The Starry Night">
-            <div class="text-container">
-                <div class="description"><em>Starry Night av Vincent van Gogh</em></div>
-                <div class="image-description">
-                    <em>en av vincents fina verk</em>
+    <div class="image-box">
+        <h2><em>Classic</em></h2>
+        <div class="image-columns">
+            <div class="image-column">
+                <img src="img/thestarrynight.png" alt="The Starry Night">
+                <div class="text-container">
+                    <div class="description"><em>Starry Night av Vincent van Gogh</em></div>
+                    <div class="image-description"><em>en av vincents fina verk</em></div>
+                </div>
+                <div class="column-footer">
+                    <button onclick="location.href='kopbild.html'" class="buy-button">Köp</button>
+                    <div class="timer"><em>Slutar om: 03:25:40</em></div>
                 </div>
             </div>
-            <div class="timer"><em>Slutar om: 03:25:40</em></div>
-        </div>
-
-        <div class="picture-item">
-            <img src="img/monalisa.webp" alt="Mona Lisa">
-            <div class="text-container">
-                <div class="description"><em>Mona Lisa av Leonardo da Vinci</em></div>
-                <div class="image-description">
-                    <em>fin kvinna under renässansen</em>
+            <div class="image-column">
+                <img src="img/kissgustavklimt.jpg" alt="Kiss Klimt">
+                <div class="text-container">
+                    <div class="description"><em>The Kiss av Gustav Klimt</em></div>
+                    <div class="image-description"><em>symbol för kärlek och förening</em></div>
+                </div>
+                <div class="column-footer">
+                    <button onclick="location.href='kopbild.html'" class="buy-button">Köp</button>
+                    <div class="timer"><em>Slutar om: 08:44:23</em></div>
                 </div>
             </div>
-            <div class="timer"><em>Slutar om: 06:10:03</em></div>
-        </div>
-
-        <div class="picture-item">
-            <img src="img/kissgustavklimt.jpg" alt="Kiss Klimt">
-            <div class="text-container">
-                <div class="description"><em>The Kiss av Gustav Klimt</em></div>
-                <div class="image-description">
-                    <em>symbol för kärlek och förening</em>
+            <div class="image-column">
+                <img src="img/monalisa.webp" alt="Mona Lisa">
+                <div class="text-container">
+                    <div class="description"><em>Mona Lisa av Leonardo da Vinci</em></div>
+                    <div class="image-description"><em>fin kvinna under renässansen</em></div>
+                </div>
+                <div class="column-footer">
+                    <button onclick="location.href='kopbild.html'" class="buy-button">Köp</button>
+                    <div class="timer"><em>Slutar om: 06:10:03</em></div>
                 </div>
             </div>
-            <div class="timer"><em>Slutar om: 08:44:23</em></div>
-        </div>
-
-        <div class="picture-item">
-            <img src="img/screambild.png" alt="Scream Edvard">
-            <div class="text-container">
-                <div class="description"><em>Scream av Edvard Munch</em></div>
-                <div class="image-description">
-                    <em>Representation för rädsla och ångest</em>
+            <div class="image-column">
+                <img src="img/screambild.png" alt="Scream Edvard">
+                <div class="text-container">
+                    <div class="description"><em>Scream av Edvard Munch</em></div>
+                    <div class="image-description"><em>Representation för rädsla och ångest</em></div>
+                </div>
+                <div class="column-footer">
+                    <button onclick="location.href='kopbild.html'" class="buy-button">Köp</button>
+                    <div class="timer"><em>Slutar om: 08:44:23</em></div>
                 </div>
             </div>
-            <div class="timer"><em>Slutar om: 08:44:23</em></div>
-        </div>
-
-        <div class="picture-item">
-            <img src="img/Great_Wave_off_Kanagawa2.png" alt="wave">
-            <div class="text-container">
-                <div class="description"><em>Great Wave off Kanagawa av Hokusai</em></div>
-                <div class="image-description">
-                    <em>En våg som välter en båt</em>
+            <div class="image-column">
+                <img src="img/Great_Wave_off_Kanagawa2.png" alt="wave">
+                <div class="text-container">
+                    <div class="description"><em>Great Wave off Kanagawa av Hokusai</em></div>
+                    <div class="image-description"><em>En våg som välter en båt</em></div>
+                </div>
+                <div class="column-footer">
+                    <button onclick="location.href='kopbild.html'" class="buy-button">Köp</button>
+                    <div class="timer"><em>Slutar om: 08:44:23</em></div>
                 </div>
             </div>
-            <div class="timer"><em>Slutar om: 08:44:23</em></div>
         </div>
-
-
-
     </div>
-
-    <h2 class="picture-category"><em>AI generat</em></h2>
-
-    <div class="picture-flex">
-        <div class="picture-item">
-            <img src="img/housegpt.webp" alt="house">
-            <div class="text-container">
-                <div class="description"><em>The House av DALL-E</em></div>
-                <div class="image-description">
-                    <em>Ett hus av AI</em>
+    <div class="image-box">
+        <h2><em>Ai generad</em></h2>
+        <div class="image-columns">
+            <div class="image-column">
+                <img src="img/housegpt.webp" alt="house by gpt">
+                <div class="text-container">
+                    <div class="description"><em>The House av DALL-E</em></div>
+                    <div class="image-description"><em>Ett hus av AI</em></div>
                 </div>
-                <button class="buy-button">Köp</button>
-
-            </div>
-            <div class="timer"><em>Slutar om: 03:25:40</em></div>
-        </div>
-
-        <div class="picture-item">
-            <img src="img/seagpt.webp" alt="Mona Lisa">
-            <div class="text-container">
-                <div class="description"><em>havet av DALL-E</em></div>
-                <div class="image-description">
-                    <em>en inblick av havet</em>
+                <div class="column-footer">
+                    <button onclick="location.href='kopbild.html'" class="buy-button">Köp</button>
+                    <div class="timer"><em>Slutar om: 03:25:40</em></div>
                 </div>
             </div>
-            <div class="timer"><em>Slutar om: 06:10:03</em></div>
-        </div>
-
-        <div class="picture-item">
-            <img src="img/skogen.webp" alt="Kiss Klimt">
-            <div class="text-container">
-                <div class="description"><em>Skogsblick av DALL-E</em></div>
-                <div class="image-description">
-                    <em>En fin skog med fina fjärilar</em>
+            <div class="image-column">
+                <img src="img/seagpt.webp" alt="Havet ai generad av gpt">
+                <div class="text-container">
+                    <div class="description"><em>Havet av DALL-E</em></div>
+                    <div class="image-description"><em>En inblick av havet</em></div>
+                </div>
+                <div class="column-footer">
+                    <button onclick="location.href='kopbild.html'" class="buy-button">Köp</button>
+                    <div class="timer"><em>Slutar om: 08:44:23</em></div>
                 </div>
             </div>
-            <div class="timer"><em>Slutar om: 08:44:23</em></div>
-        </div>
-
-        <div class="picture-item">
-            <img src="img/galaxen.webp" alt="Scream Edvard">
-            <div class="text-container">
-                <div class="description"><em>Galaxen av DALL-E</em></div>
-                <div class="image-description">
-                    <em>Ett inblick av galaxen långt borta</em>
+            <div class="image-column">
+                <img src="img/skogen.webp" alt="Skogen ai generad av gpt">
+                <div class="text-container">
+                    <div class="description"><em>Skogsblick av DALL-E</em></div>
+                    <div class="image-description"><em>En fin skog med fina fjärilar</em></div>
+                </div>
+                <div class="column-footer">
+                    <button onclick="location.href='kopbild.html'" class="buy-button">Köp</button>
+                    <div class="timer"><em>Slutar om: 06:10:03</em></div>
                 </div>
             </div>
-            <div class="timer"><em>Slutar om: 08:44:23</em></div>
-        </div>
-
-        <div class="picture-item">
-            <img src="img/medieval.webp" alt="wave">
-            <div class="text-container">
-                <div class="description"><em>Kungadomet av DALL-E</em></div>
-                <div class="image-description">
-                    <em>Napoleons tid</em>
+            <div class="image-column">
+                <img src="img/galaxen.webp" alt="En bild av galaxen med rymdraket gpt">
+                <div class="text-container">
+                    <div class="description"><em>Galaxen av DALL-E</em></div>
+                    <div class="image-description"><em>Ett inblick av galaxen långt borta</em></div>
+                </div>
+                <div class="column-footer">
+                    <button onclick="location.href='kopbild.html'" class="buy-button">Köp</button>
+                    <div class="timer"><em>Slutar om: 08:44:23</em></div>
                 </div>
             </div>
-            <div class="timer"><em>Slutar om: 08:44:23</em></div>
+            <div class="image-column">
+                <img src="img/medieval.webp" alt="Kunadome förr i tdien gpt">
+                <div class="text-container">
+                    <div class="description"><em>Kungadomet av DALL-E</em></div>
+                    <div class="image-description"><em>Napoleons tid</em></div>
+                </div>
+                <div class="column-footer">
+                    <button onclick="location.href='kopbild.html'" class="buy-button">Köp</button>
+                    <div class="timer"><em>Slutar om: 08:44:23</em></div>
+                </div>
+            </div>
         </div>
-
-
-
-    </div>    
-
+    </div>
 </body>
 </html>
